@@ -1,9 +1,9 @@
 `ap_verify_testdata`
 ====================
 
-Data from `obs_test` for small-scale tests of `ap_verify` functionality.
+Data from `obs_test` for small-scale tests of [`ap_verify`](https://github.com/lsst-dm/ap_verify/) functionality.
 
-The data are uningested, but otherwise identical to the files provided by `obs_test`.
+The data are uningested, but otherwise identical to the files provided by [`obs_test`](https://github.com/lsst/obs_test/).
 See that package for documentation of the file contents.
 
 Relevant Files and Directories

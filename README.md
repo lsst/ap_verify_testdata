@@ -1,9 +1,9 @@
 `ap_verify_testdata`
 ====================
 
-Data from `obs_test` for small-scale tests of `ap_verify` functionality.
+Data from `obs_test` for small-scale tests of [`ap_verify`](https://github.com/lsst-dm/ap_verify/) functionality.
 
-The data are uningested, but otherwise identical to the files provided by `obs_test`.
+The data are uningested, but otherwise identical to the files provided by [`obs_test`](https://github.com/lsst/obs_test/).
 See that package for documentation of the file contents.
 
 Relevant Files and Directories
@@ -14,7 +14,7 @@ path                  | description
 `calib`               | Master calibration files from [`obs_test`](https://github.com/lsst/obs_test/tree/master/data) for `g` and `r` band.
 `config`              | Dataset-specific configs to help Stack code work with this dataset.
 `templates`           | To be populated with `TemplateCoadd` images produced by a compatible version of the LSST pipelines. Must be organized as a filesystem-based Butler repo. Currently empty.
-`repo`                | Butler repo into which raw data can be ingested. This should be copied to an appropriate location before ingestion.
+`repo`                | A template for a Butler raw data repository. This directory must never be written to; instead, it should be copied to a separate location, and data ingested into the copy (this is handled automatically by `ap_verify`, see below). Currently contains the appropriate `obs_test` `_mapper` file.
 `refcats`             | A small Gaia reference catalog.
 `dataIds.list`        | List of dataIds in this repo. For use in running Tasks. Currently set to run all Ids.
 
@@ -26,3 +26,15 @@ To clone and use this repository, you'll need Git Large File Storage (LFS).
 
 Our [Developer Guide](http://developer.lsst.io/en/latest/tools/git_lfs.html) explains how to setup Git LFS for LSST development.
 
+Usage
+-----
+
+<!-- TODO: replace with link to Sphinx label `ap-verify-datasets-install` once it's published -->
+
+This dataset must be cloned (with Git LFS) and set up with [EUPS](https://developer.lsst.io/stack/eups-tutorial.html) before it can be processed with `ap_verify`:
+
+    git clone https://github.com/lsst-dm/ap_verify_testdata/
+    setup -r ap_verify_testdata
+
+Unlike other datasets, `ap_verify_testdata` is not recognized by `ap_verify`'s normal command-line scripts.
+It can be run through testing by calling `pytest` from the `ap_verify` installation directory.

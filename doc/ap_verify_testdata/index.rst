@@ -5,7 +5,7 @@ ap_verify_testdata
 ##################
 
 The ``ap_verify_testdata`` package contains several files from `obs_test <https://github.com/lsst/obs_test/>`_.
-The package is intended to test dataset support in `lsst.ap.verify` code.
+The package is intended to test dataset support in :doc:`/modules/lsst.ap.verify/index` code.
 
 .. _ap_verify_testdata-using:
 

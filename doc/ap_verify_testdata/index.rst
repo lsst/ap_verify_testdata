@@ -23,7 +23,7 @@ Dataset contents
 This package provides a number of demonstration files copied from `obs_test <https://github.com/lsst/obs_test/>`_.
 See that package for detailed file and provenance information.
 
-The dataset contents include raw images, biases, flats, and defects.
+The dataset contents include raw images, biases, and flats.
 The dataset does not provide any image differencing templates.
 It does have a small Gaia DR1 reference catalog, but it is not guaranteed to overlap with the footprint of the raw data.
 

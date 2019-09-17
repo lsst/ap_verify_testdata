@@ -29,12 +29,11 @@ Our [Developer Guide](http://developer.lsst.io/en/latest/tools/git_lfs.html) exp
 Usage
 -----
 
-<!-- TODO: replace with link to Sphinx label `ap-verify-datasets-install` once it's published -->
+`ap_verify_testdata` is not included in `lsst_distrib` and is not available through `newinstall.sh`.
+However, it can be installed explicitly with the [LSST Software Build Tool](https://developer.lsst.io/stack/lsstsw.html) or by cloning directly:
 
-This dataset must be cloned (with Git LFS) and set up with [EUPS](https://developer.lsst.io/stack/eups-tutorial.html) before it can be processed with `ap_verify`:
-
-    git clone https://github.com/lsst-dm/ap_verify_testdata/
+    git clone https://github.com/lsst/ap_verify_testdata/
     setup -r ap_verify_testdata
 
 Unlike other datasets, `ap_verify_testdata` is not recognized by `ap_verify`'s normal command-line scripts.
-It can be run through testing by calling `pytest` from the `ap_verify` installation directory.
+It can be run through testing by calling `pytest` from the `ap_verify` installation directory, after `ap_verify` has been set up as normal.

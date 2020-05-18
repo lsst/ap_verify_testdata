@@ -1,0 +1,158 @@
+description: Butler Data Repository Export
+version: 0
+data:
+- type: dimension
+  element: instrument
+  records:
+  - name: LSST-ImSim
+    visit_max: 9999999999
+    exposure_max: 9999999999
+    detector_max: 999
+    class_name: lsst.obs.lsst.LsstImSim
+- type: dimension
+  element: calibration_label
+  records:
+  - instrument: LSST-ImSim
+    name: gen2/flat_2022-08-06_037_i
+    datetime_begin: 1995-03-21 23:59:31
+    datetime_end: 2049-12-21 23:59:23
+  - instrument: LSST-ImSim
+    name: gen2/bias_2022-01-01_037
+    datetime_begin: 1994-08-16 23:59:31
+    datetime_end: 2049-05-18 23:59:23
+  - instrument: LSST-ImSim
+    name: unbounded
+    datetime_begin: 1969-12-31 23:59:51.999918
+    datetime_end: 2099-12-31 23:59:23
+- type: dimension
+  element: detector
+  records:
+  - instrument: LSST-ImSim
+    id: 37
+    full_name: R11_S01
+    name_in_raft: S01
+    raft: R11
+    purpose: SCIENCE
+- type: dimension
+  element: physical_filter
+  records:
+  - instrument: LSST-ImSim
+    name: i
+    abstract_filter: i
+- type: dataset_type
+  name: camera
+  dimensions:
+  - instrument
+  - calibration_label
+  storage_class: Camera
+- type: run
+  name: calib/LSST-ImSim
+- type: dataset
+  dataset_type: camera
+  run: calib/LSST-ImSim
+  records:
+  - dataset_id:
+    - 1
+    data_id:
+    - instrument: LSST-ImSim
+      calibration_label: unbounded
+    path: calib/LSST-ImSim/camera/camera_unbounded_LSST-ImSim_calib_LSST-ImSim.fits
+    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+- type: dataset_type
+  name: flat
+  dimensions:
+  - abstract_filter
+  - instrument
+  - calibration_label
+  - detector
+  - physical_filter
+  storage_class: ExposureF
+- type: run
+  name: calib/LSST-ImSim
+- type: dataset
+  dataset_type: flat
+  run: calib/LSST-ImSim
+  records:
+  - dataset_id:
+    - 2
+    data_id:
+    - instrument: LSST-ImSim
+      calibration_label: gen2/flat_2022-08-06_037_i
+      detector: 37
+      physical_filter: i
+    path: calib/LSST-ImSim/flat/i/i/flat_i_i_gen2_flat_2022-08-06_037_i_37_LSST-ImSim_calib_LSST-ImSim.fits
+    formatter: lsst.obs.base.fitsExposureFormatter.FitsExposureFormatter
+- type: dataset_type
+  name: bias
+  dimensions:
+  - instrument
+  - calibration_label
+  - detector
+  storage_class: ExposureF
+- type: run
+  name: calib/LSST-ImSim
+- type: dataset
+  dataset_type: bias
+  run: calib/LSST-ImSim
+  records:
+  - dataset_id:
+    - 3
+    data_id:
+    - instrument: LSST-ImSim
+      calibration_label: gen2/bias_2022-01-01_037
+      detector: 37
+    path: calib/LSST-ImSim/bias/bias_gen2_bias_2022-01-01_037_37_LSST-ImSim_calib_LSST-ImSim.fits
+    formatter: lsst.obs.base.fitsExposureFormatter.FitsExposureFormatter
+- type: dataset_type
+  name: gaia
+  dimensions:
+  - htm7
+  storage_class: SimpleCatalog
+- type: run
+  name: refcats
+- type: dataset
+  dataset_type: gaia
+  run: refcats
+  records:
+  - dataset_id:
+    - 4
+    data_id:
+    - htm7: 232347
+    path: refcats/gaia/gaia_232347_refcats.fits
+    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+  - dataset_id:
+    - 5
+    data_id:
+    - htm7: 232324
+    path: refcats/gaia/gaia_232324_refcats.fits
+    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+  - dataset_id:
+    - 6
+    data_id:
+    - htm7: 232376
+    path: refcats/gaia/gaia_232376_refcats.fits
+    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+  - dataset_id:
+    - 7
+    data_id:
+    - htm7: 232327
+    path: refcats/gaia/gaia_232327_refcats.fits
+    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+  - dataset_id:
+    - 8
+    data_id:
+    - htm7: 232326
+    path: refcats/gaia/gaia_232326_refcats.fits
+    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+  - dataset_id:
+    - 9
+    data_id:
+    - htm7: 232344
+    path: refcats/gaia/gaia_232344_refcats.fits
+    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+  - dataset_id:
+    - 10
+    data_id:
+    - htm7: 232345
+    path: refcats/gaia/gaia_232345_refcats.fits
+    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter

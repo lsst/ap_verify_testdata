@@ -4,7 +4,7 @@
 ap_verify_testdata
 ##################
 
-The ``ap_verify_testdata`` package contains several files from `obs_test <https://github.com/lsst/obs_test/>`_.
+The ``ap_verify_testdata`` package contains several files from `testdata_lsst <https://github.com/lsst/testdata_lsst/>`_.
 The package is intended to test dataset support in :doc:`/modules/lsst.ap.verify/index` code.
 
 .. _ap_verify_testdata-using:
@@ -20,10 +20,10 @@ Because there are no templates and the reference catalog is not guaranteed to ma
 Dataset contents
 ================
 
-This package provides a number of demonstration files copied from `obs_test <https://github.com/lsst/obs_test/>`_.
+This package provides a number of demonstration files copied from `testdata_lsst <https://github.com/lsst/testdata_lsst/>`_.
 See that package for detailed file and provenance information.
 
-The dataset contents include raw images, biases, and flats.
+The dataset contents include raw images and flats.
 The dataset does not provide any image differencing templates.
 It does have a small Gaia DR1 reference catalog, but it is not guaranteed to overlap with the footprint of the raw data.
 

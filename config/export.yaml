@@ -57,7 +57,7 @@ data:
     - instrument: LSST-ImSim
       calibration_label: unbounded
     path: calib/LSST-ImSim/camera/camera_unbounded_LSST-ImSim_calib_LSST-ImSim.fits
-    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: dataset_type
   name: flat
   dimensions:
@@ -81,7 +81,7 @@ data:
       detector: 37
       physical_filter: i
     path: calib/LSST-ImSim/flat/i/i/flat_i_i_gen2_flat_2022-08-06_037_i_37_LSST-ImSim_calib_LSST-ImSim.fits
-    formatter: lsst.obs.base.fitsExposureFormatter.FitsExposureFormatter
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: bias
   dimensions:
@@ -102,7 +102,7 @@ data:
       calibration_label: gen2/bias_2022-01-01_037
       detector: 37
     path: calib/LSST-ImSim/bias/bias_gen2_bias_2022-01-01_037_37_LSST-ImSim_calib_LSST-ImSim.fits
-    formatter: lsst.obs.base.fitsExposureFormatter.FitsExposureFormatter
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: gaia
   dimensions:
@@ -119,40 +119,40 @@ data:
     data_id:
     - htm7: 232347
     path: refcats/gaia/gaia_232347_refcats.fits
-    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 5
     data_id:
     - htm7: 232324
     path: refcats/gaia/gaia_232324_refcats.fits
-    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 6
     data_id:
     - htm7: 232376
     path: refcats/gaia/gaia_232376_refcats.fits
-    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 7
     data_id:
     - htm7: 232327
     path: refcats/gaia/gaia_232327_refcats.fits
-    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 8
     data_id:
     - htm7: 232326
     path: refcats/gaia/gaia_232326_refcats.fits
-    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 9
     data_id:
     - htm7: 232344
     path: refcats/gaia/gaia_232344_refcats.fits
-    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 10
     data_id:
     - htm7: 232345
     path: refcats/gaia/gaia_232345_refcats.fits
-    formatter: lsst.obs.base.fitsGenericFormatter.FitsGenericFormatter
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter

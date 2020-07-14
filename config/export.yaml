@@ -13,13 +13,13 @@ data:
   element: calibration_label
   records:
   - instrument: LSST-ImSim
-    name: gen2/flat_2022-08-06_037_i
-    datetime_begin: 1995-03-21 23:59:31
-    datetime_end: 2049-12-21 23:59:23
-  - instrument: LSST-ImSim
     name: gen2/bias_2022-01-01_037
     datetime_begin: 1994-08-16 23:59:31
     datetime_end: 2049-05-18 23:59:23
+  - instrument: LSST-ImSim
+    name: gen2/flat_2022-08-06_037_i
+    datetime_begin: 1995-03-21 23:59:31
+    datetime_end: 2049-12-21 23:59:23
   - instrument: LSST-ImSim
     name: unbounded
     datetime_begin: 1969-12-31 23:59:51.999918
@@ -46,18 +46,39 @@ data:
   - calibration_label
   storage_class: Camera
 - type: run
-  name: calib/LSST-ImSim
+  name: LSST-ImSim/calib
 - type: dataset
   dataset_type: camera
-  run: calib/LSST-ImSim
+  run: LSST-ImSim/calib
   records:
   - dataset_id:
     - 1
     data_id:
     - instrument: LSST-ImSim
       calibration_label: unbounded
-    path: calib/LSST-ImSim/camera/camera_unbounded_LSST-ImSim_calib_LSST-ImSim.fits
+    path: LSST-ImSim/calib/camera/camera_unbounded_LSST-ImSim_LSST-ImSim_calib.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: bias
+  dimensions:
+  - instrument
+  - calibration_label
+  - detector
+  storage_class: ExposureF
+- type: run
+  name: LSST-ImSim/calib
+- type: dataset
+  dataset_type: bias
+  run: LSST-ImSim/calib
+  records:
+  - dataset_id:
+    - 2
+    data_id:
+    - instrument: LSST-ImSim
+      calibration_label: gen2/bias_2022-01-01_037
+      detector: 37
+    path: LSST-ImSim/calib/bias/bias_gen2_bias_2022-01-01_037_37_LSST-ImSim_LSST-ImSim_calib.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: flat
   dimensions:
@@ -68,40 +89,19 @@ data:
   - physical_filter
   storage_class: ExposureF
 - type: run
-  name: calib/LSST-ImSim
+  name: LSST-ImSim/calib
 - type: dataset
   dataset_type: flat
-  run: calib/LSST-ImSim
-  records:
-  - dataset_id:
-    - 2
-    data_id:
-    - instrument: LSST-ImSim
-      calibration_label: gen2/flat_2022-08-06_037_i
-      detector: 37
-      physical_filter: i
-    path: calib/LSST-ImSim/flat/i/i/flat_i_i_gen2_flat_2022-08-06_037_i_37_LSST-ImSim_calib_LSST-ImSim.fits
-    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
-- type: dataset_type
-  name: bias
-  dimensions:
-  - instrument
-  - calibration_label
-  - detector
-  storage_class: ExposureF
-- type: run
-  name: calib/LSST-ImSim
-- type: dataset
-  dataset_type: bias
-  run: calib/LSST-ImSim
+  run: LSST-ImSim/calib
   records:
   - dataset_id:
     - 3
     data_id:
     - instrument: LSST-ImSim
-      calibration_label: gen2/bias_2022-01-01_037
+      calibration_label: gen2/flat_2022-08-06_037_i
       detector: 37
-    path: calib/LSST-ImSim/bias/bias_gen2_bias_2022-01-01_037_37_LSST-ImSim_calib_LSST-ImSim.fits
+      physical_filter: i
+    path: LSST-ImSim/calib/flat/i/i/flat_i_i_gen2_flat_2022-08-06_037_i_37_LSST-ImSim_LSST-ImSim_calib.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: gaia

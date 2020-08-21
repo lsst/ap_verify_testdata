@@ -1150,17 +1150,17 @@ data:
   element: calibration_label
   records:
   - instrument: LSST-ImSim
+    name: gen2/bias_2022-01-01_037
+    datetime_begin: !butler_time/tai/iso '1994-08-17 00:00:00.000000000'
+    datetime_end: !butler_time/tai/iso '2049-05-19 00:00:00.000000000'
+  - instrument: LSST-ImSim
     name: gen2/flat_2022-08-06_037_i
     datetime_begin: !butler_time/tai/iso '1995-03-22 00:00:00.000000000'
     datetime_end: !butler_time/tai/iso '2049-12-22 00:00:00.000000000'
   - instrument: LSST-ImSim
     name: unbounded
-    datetime_begin: !butler_time/tai/iso '1970-01-01 00:00:00.000000000'
-    datetime_end: !butler_time/tai/iso '2100-01-01 00:00:00.000000000'
-  - instrument: LSST-ImSim
-    name: gen2/bias_2022-01-01_037
-    datetime_begin: !butler_time/tai/iso '1994-08-17 00:00:00.000000000'
-    datetime_end: !butler_time/tai/iso '2049-05-19 00:00:00.000000000'
+    datetime_begin: null
+    datetime_end: null
 - type: dimension
   element: physical_filter
   records:
@@ -1187,6 +1187,27 @@ data:
     path: LSST-ImSim/calib/camera/camera_unbounded_LSST-ImSim_LSST-ImSim_calib.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: dataset_type
+  name: bias
+  dimensions:
+  - instrument
+  - calibration_label
+  - detector
+  storage_class: ExposureF
+- type: run
+  name: LSST-ImSim/calib
+- type: dataset
+  dataset_type: bias
+  run: LSST-ImSim/calib
+  records:
+  - dataset_id:
+    - 2
+    data_id:
+    - instrument: LSST-ImSim
+      calibration_label: gen2/bias_2022-01-01_037
+      detector: 37
+    path: LSST-ImSim/calib/bias/bias_gen2_bias_2022-01-01_037_37_LSST-ImSim_LSST-ImSim_calib.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
   name: flat
   dimensions:
   - abstract_filter
@@ -1202,34 +1223,13 @@ data:
   run: LSST-ImSim/calib
   records:
   - dataset_id:
-    - 2
+    - 3
     data_id:
     - instrument: LSST-ImSim
       calibration_label: gen2/flat_2022-08-06_037_i
       detector: 37
       physical_filter: i
     path: LSST-ImSim/calib/flat/i/i/flat_i_i_gen2_flat_2022-08-06_037_i_37_LSST-ImSim_LSST-ImSim_calib.fits
-    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
-- type: dataset_type
-  name: bias
-  dimensions:
-  - instrument
-  - calibration_label
-  - detector
-  storage_class: ExposureF
-- type: run
-  name: LSST-ImSim/calib
-- type: dataset
-  dataset_type: bias
-  run: LSST-ImSim/calib
-  records:
-  - dataset_id:
-    - 3
-    data_id:
-    - instrument: LSST-ImSim
-      calibration_label: gen2/bias_2022-01-01_037
-      detector: 37
-    path: LSST-ImSim/calib/bias/bias_gen2_bias_2022-01-01_037_37_LSST-ImSim_LSST-ImSim_calib.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: gaia
@@ -1245,14 +1245,14 @@ data:
   - dataset_id:
     - 4
     data_id:
-    - htm7: 232347
-    path: refcats/gaia/gaia_232347_refcats.fits
+    - htm7: 232324
+    path: refcats/gaia/gaia_232324_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 5
     data_id:
-    - htm7: 232324
-    path: refcats/gaia/gaia_232324_refcats.fits
+    - htm7: 232347
+    path: refcats/gaia/gaia_232347_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 6
@@ -1275,12 +1275,12 @@ data:
   - dataset_id:
     - 9
     data_id:
-    - htm7: 232344
-    path: refcats/gaia/gaia_232344_refcats.fits
+    - htm7: 232345
+    path: refcats/gaia/gaia_232345_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 10
     data_id:
-    - htm7: 232345
-    path: refcats/gaia/gaia_232345_refcats.fits
+    - htm7: 232344
+    path: refcats/gaia/gaia_232344_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter

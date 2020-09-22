@@ -4,7 +4,7 @@ data:
 - type: dimension
   element: instrument
   records:
-  - name: LSST-ImSim
+  - name: LSSTCam-imSim
     visit_max: 9999999999
     exposure_max: 9999999999
     detector_max: 999
@@ -12,1135 +12,1135 @@ data:
 - type: dimension
   element: detector
   records:
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 0
     full_name: R01_S00
     name_in_raft: S00
     raft: R01
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 1
     full_name: R01_S01
     name_in_raft: S01
     raft: R01
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 2
     full_name: R01_S02
     name_in_raft: S02
     raft: R01
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 3
     full_name: R01_S10
     name_in_raft: S10
     raft: R01
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 4
     full_name: R01_S11
     name_in_raft: S11
     raft: R01
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 5
     full_name: R01_S12
     name_in_raft: S12
     raft: R01
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 6
     full_name: R01_S20
     name_in_raft: S20
     raft: R01
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 7
     full_name: R01_S21
     name_in_raft: S21
     raft: R01
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 8
     full_name: R01_S22
     name_in_raft: S22
     raft: R01
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 9
     full_name: R02_S00
     name_in_raft: S00
     raft: R02
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 10
     full_name: R02_S01
     name_in_raft: S01
     raft: R02
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 11
     full_name: R02_S02
     name_in_raft: S02
     raft: R02
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 12
     full_name: R02_S10
     name_in_raft: S10
     raft: R02
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 13
     full_name: R02_S11
     name_in_raft: S11
     raft: R02
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 14
     full_name: R02_S12
     name_in_raft: S12
     raft: R02
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 15
     full_name: R02_S20
     name_in_raft: S20
     raft: R02
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 16
     full_name: R02_S21
     name_in_raft: S21
     raft: R02
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 17
     full_name: R02_S22
     name_in_raft: S22
     raft: R02
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 18
     full_name: R03_S00
     name_in_raft: S00
     raft: R03
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 19
     full_name: R03_S01
     name_in_raft: S01
     raft: R03
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 20
     full_name: R03_S02
     name_in_raft: S02
     raft: R03
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 21
     full_name: R03_S10
     name_in_raft: S10
     raft: R03
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 22
     full_name: R03_S11
     name_in_raft: S11
     raft: R03
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 23
     full_name: R03_S12
     name_in_raft: S12
     raft: R03
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 24
     full_name: R03_S20
     name_in_raft: S20
     raft: R03
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 25
     full_name: R03_S21
     name_in_raft: S21
     raft: R03
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 26
     full_name: R03_S22
     name_in_raft: S22
     raft: R03
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 27
     full_name: R10_S00
     name_in_raft: S00
     raft: R10
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 28
     full_name: R10_S01
     name_in_raft: S01
     raft: R10
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 29
     full_name: R10_S02
     name_in_raft: S02
     raft: R10
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 30
     full_name: R10_S10
     name_in_raft: S10
     raft: R10
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 31
     full_name: R10_S11
     name_in_raft: S11
     raft: R10
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 32
     full_name: R10_S12
     name_in_raft: S12
     raft: R10
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 33
     full_name: R10_S20
     name_in_raft: S20
     raft: R10
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 34
     full_name: R10_S21
     name_in_raft: S21
     raft: R10
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 35
     full_name: R10_S22
     name_in_raft: S22
     raft: R10
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 36
     full_name: R11_S00
     name_in_raft: S00
     raft: R11
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 37
     full_name: R11_S01
     name_in_raft: S01
     raft: R11
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 38
     full_name: R11_S02
     name_in_raft: S02
     raft: R11
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 39
     full_name: R11_S10
     name_in_raft: S10
     raft: R11
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 40
     full_name: R11_S11
     name_in_raft: S11
     raft: R11
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 41
     full_name: R11_S12
     name_in_raft: S12
     raft: R11
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 42
     full_name: R11_S20
     name_in_raft: S20
     raft: R11
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 43
     full_name: R11_S21
     name_in_raft: S21
     raft: R11
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 44
     full_name: R11_S22
     name_in_raft: S22
     raft: R11
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 45
     full_name: R12_S00
     name_in_raft: S00
     raft: R12
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 46
     full_name: R12_S01
     name_in_raft: S01
     raft: R12
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 47
     full_name: R12_S02
     name_in_raft: S02
     raft: R12
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 48
     full_name: R12_S10
     name_in_raft: S10
     raft: R12
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 49
     full_name: R12_S11
     name_in_raft: S11
     raft: R12
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 50
     full_name: R12_S12
     name_in_raft: S12
     raft: R12
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 51
     full_name: R12_S20
     name_in_raft: S20
     raft: R12
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 52
     full_name: R12_S21
     name_in_raft: S21
     raft: R12
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 53
     full_name: R12_S22
     name_in_raft: S22
     raft: R12
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 54
     full_name: R13_S00
     name_in_raft: S00
     raft: R13
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 55
     full_name: R13_S01
     name_in_raft: S01
     raft: R13
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 56
     full_name: R13_S02
     name_in_raft: S02
     raft: R13
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 57
     full_name: R13_S10
     name_in_raft: S10
     raft: R13
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 58
     full_name: R13_S11
     name_in_raft: S11
     raft: R13
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 59
     full_name: R13_S12
     name_in_raft: S12
     raft: R13
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 60
     full_name: R13_S20
     name_in_raft: S20
     raft: R13
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 61
     full_name: R13_S21
     name_in_raft: S21
     raft: R13
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 62
     full_name: R13_S22
     name_in_raft: S22
     raft: R13
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 63
     full_name: R14_S00
     name_in_raft: S00
     raft: R14
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 64
     full_name: R14_S01
     name_in_raft: S01
     raft: R14
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 65
     full_name: R14_S02
     name_in_raft: S02
     raft: R14
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 66
     full_name: R14_S10
     name_in_raft: S10
     raft: R14
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 67
     full_name: R14_S11
     name_in_raft: S11
     raft: R14
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 68
     full_name: R14_S12
     name_in_raft: S12
     raft: R14
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 69
     full_name: R14_S20
     name_in_raft: S20
     raft: R14
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 70
     full_name: R14_S21
     name_in_raft: S21
     raft: R14
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 71
     full_name: R14_S22
     name_in_raft: S22
     raft: R14
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 72
     full_name: R20_S00
     name_in_raft: S00
     raft: R20
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 73
     full_name: R20_S01
     name_in_raft: S01
     raft: R20
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 74
     full_name: R20_S02
     name_in_raft: S02
     raft: R20
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 75
     full_name: R20_S10
     name_in_raft: S10
     raft: R20
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 76
     full_name: R20_S11
     name_in_raft: S11
     raft: R20
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 77
     full_name: R20_S12
     name_in_raft: S12
     raft: R20
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 78
     full_name: R20_S20
     name_in_raft: S20
     raft: R20
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 79
     full_name: R20_S21
     name_in_raft: S21
     raft: R20
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 80
     full_name: R20_S22
     name_in_raft: S22
     raft: R20
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 81
     full_name: R21_S00
     name_in_raft: S00
     raft: R21
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 82
     full_name: R21_S01
     name_in_raft: S01
     raft: R21
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 83
     full_name: R21_S02
     name_in_raft: S02
     raft: R21
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 84
     full_name: R21_S10
     name_in_raft: S10
     raft: R21
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 85
     full_name: R21_S11
     name_in_raft: S11
     raft: R21
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 86
     full_name: R21_S12
     name_in_raft: S12
     raft: R21
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 87
     full_name: R21_S20
     name_in_raft: S20
     raft: R21
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 88
     full_name: R21_S21
     name_in_raft: S21
     raft: R21
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 89
     full_name: R21_S22
     name_in_raft: S22
     raft: R21
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 90
     full_name: R22_S00
     name_in_raft: S00
     raft: R22
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 91
     full_name: R22_S01
     name_in_raft: S01
     raft: R22
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 92
     full_name: R22_S02
     name_in_raft: S02
     raft: R22
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 93
     full_name: R22_S10
     name_in_raft: S10
     raft: R22
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 94
     full_name: R22_S11
     name_in_raft: S11
     raft: R22
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 95
     full_name: R22_S12
     name_in_raft: S12
     raft: R22
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 96
     full_name: R22_S20
     name_in_raft: S20
     raft: R22
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 97
     full_name: R22_S21
     name_in_raft: S21
     raft: R22
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 98
     full_name: R22_S22
     name_in_raft: S22
     raft: R22
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 99
     full_name: R23_S00
     name_in_raft: S00
     raft: R23
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 100
     full_name: R23_S01
     name_in_raft: S01
     raft: R23
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 101
     full_name: R23_S02
     name_in_raft: S02
     raft: R23
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 102
     full_name: R23_S10
     name_in_raft: S10
     raft: R23
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 103
     full_name: R23_S11
     name_in_raft: S11
     raft: R23
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 104
     full_name: R23_S12
     name_in_raft: S12
     raft: R23
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 105
     full_name: R23_S20
     name_in_raft: S20
     raft: R23
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 106
     full_name: R23_S21
     name_in_raft: S21
     raft: R23
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 107
     full_name: R23_S22
     name_in_raft: S22
     raft: R23
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 108
     full_name: R24_S00
     name_in_raft: S00
     raft: R24
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 109
     full_name: R24_S01
     name_in_raft: S01
     raft: R24
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 110
     full_name: R24_S02
     name_in_raft: S02
     raft: R24
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 111
     full_name: R24_S10
     name_in_raft: S10
     raft: R24
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 112
     full_name: R24_S11
     name_in_raft: S11
     raft: R24
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 113
     full_name: R24_S12
     name_in_raft: S12
     raft: R24
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 114
     full_name: R24_S20
     name_in_raft: S20
     raft: R24
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 115
     full_name: R24_S21
     name_in_raft: S21
     raft: R24
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 116
     full_name: R24_S22
     name_in_raft: S22
     raft: R24
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 117
     full_name: R30_S00
     name_in_raft: S00
     raft: R30
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 118
     full_name: R30_S01
     name_in_raft: S01
     raft: R30
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 119
     full_name: R30_S02
     name_in_raft: S02
     raft: R30
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 120
     full_name: R30_S10
     name_in_raft: S10
     raft: R30
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 121
     full_name: R30_S11
     name_in_raft: S11
     raft: R30
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 122
     full_name: R30_S12
     name_in_raft: S12
     raft: R30
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 123
     full_name: R30_S20
     name_in_raft: S20
     raft: R30
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 124
     full_name: R30_S21
     name_in_raft: S21
     raft: R30
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 125
     full_name: R30_S22
     name_in_raft: S22
     raft: R30
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 126
     full_name: R31_S00
     name_in_raft: S00
     raft: R31
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 127
     full_name: R31_S01
     name_in_raft: S01
     raft: R31
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 128
     full_name: R31_S02
     name_in_raft: S02
     raft: R31
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 129
     full_name: R31_S10
     name_in_raft: S10
     raft: R31
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 130
     full_name: R31_S11
     name_in_raft: S11
     raft: R31
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 131
     full_name: R31_S12
     name_in_raft: S12
     raft: R31
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 132
     full_name: R31_S20
     name_in_raft: S20
     raft: R31
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 133
     full_name: R31_S21
     name_in_raft: S21
     raft: R31
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 134
     full_name: R31_S22
     name_in_raft: S22
     raft: R31
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 135
     full_name: R32_S00
     name_in_raft: S00
     raft: R32
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 136
     full_name: R32_S01
     name_in_raft: S01
     raft: R32
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 137
     full_name: R32_S02
     name_in_raft: S02
     raft: R32
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 138
     full_name: R32_S10
     name_in_raft: S10
     raft: R32
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 139
     full_name: R32_S11
     name_in_raft: S11
     raft: R32
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 140
     full_name: R32_S12
     name_in_raft: S12
     raft: R32
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 141
     full_name: R32_S20
     name_in_raft: S20
     raft: R32
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 142
     full_name: R32_S21
     name_in_raft: S21
     raft: R32
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 143
     full_name: R32_S22
     name_in_raft: S22
     raft: R32
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 144
     full_name: R33_S00
     name_in_raft: S00
     raft: R33
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 145
     full_name: R33_S01
     name_in_raft: S01
     raft: R33
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 146
     full_name: R33_S02
     name_in_raft: S02
     raft: R33
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 147
     full_name: R33_S10
     name_in_raft: S10
     raft: R33
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 148
     full_name: R33_S11
     name_in_raft: S11
     raft: R33
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 149
     full_name: R33_S12
     name_in_raft: S12
     raft: R33
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 150
     full_name: R33_S20
     name_in_raft: S20
     raft: R33
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 151
     full_name: R33_S21
     name_in_raft: S21
     raft: R33
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 152
     full_name: R33_S22
     name_in_raft: S22
     raft: R33
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 153
     full_name: R34_S00
     name_in_raft: S00
     raft: R34
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 154
     full_name: R34_S01
     name_in_raft: S01
     raft: R34
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 155
     full_name: R34_S02
     name_in_raft: S02
     raft: R34
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 156
     full_name: R34_S10
     name_in_raft: S10
     raft: R34
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 157
     full_name: R34_S11
     name_in_raft: S11
     raft: R34
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 158
     full_name: R34_S12
     name_in_raft: S12
     raft: R34
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 159
     full_name: R34_S20
     name_in_raft: S20
     raft: R34
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 160
     full_name: R34_S21
     name_in_raft: S21
     raft: R34
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 161
     full_name: R34_S22
     name_in_raft: S22
     raft: R34
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 162
     full_name: R41_S00
     name_in_raft: S00
     raft: R41
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 163
     full_name: R41_S01
     name_in_raft: S01
     raft: R41
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 164
     full_name: R41_S02
     name_in_raft: S02
     raft: R41
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 165
     full_name: R41_S10
     name_in_raft: S10
     raft: R41
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 166
     full_name: R41_S11
     name_in_raft: S11
     raft: R41
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 167
     full_name: R41_S12
     name_in_raft: S12
     raft: R41
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 168
     full_name: R41_S20
     name_in_raft: S20
     raft: R41
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 169
     full_name: R41_S21
     name_in_raft: S21
     raft: R41
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 170
     full_name: R41_S22
     name_in_raft: S22
     raft: R41
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 171
     full_name: R42_S00
     name_in_raft: S00
     raft: R42
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 172
     full_name: R42_S01
     name_in_raft: S01
     raft: R42
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 173
     full_name: R42_S02
     name_in_raft: S02
     raft: R42
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 174
     full_name: R42_S10
     name_in_raft: S10
     raft: R42
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 175
     full_name: R42_S11
     name_in_raft: S11
     raft: R42
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 176
     full_name: R42_S12
     name_in_raft: S12
     raft: R42
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 177
     full_name: R42_S20
     name_in_raft: S20
     raft: R42
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 178
     full_name: R42_S21
     name_in_raft: S21
     raft: R42
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 179
     full_name: R42_S22
     name_in_raft: S22
     raft: R42
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 180
     full_name: R43_S00
     name_in_raft: S00
     raft: R43
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 181
     full_name: R43_S01
     name_in_raft: S01
     raft: R43
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 182
     full_name: R43_S02
     name_in_raft: S02
     raft: R43
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 183
     full_name: R43_S10
     name_in_raft: S10
     raft: R43
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 184
     full_name: R43_S11
     name_in_raft: S11
     raft: R43
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 185
     full_name: R43_S12
     name_in_raft: S12
     raft: R43
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 186
     full_name: R43_S20
     name_in_raft: S20
     raft: R43
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 187
     full_name: R43_S21
     name_in_raft: S21
     raft: R43
     purpose: SCIENCE
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     id: 188
     full_name: R43_S22
     name_in_raft: S22
@@ -1149,22 +1149,22 @@ data:
 - type: dimension
   element: calibration_label
   records:
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     name: gen2/bias_2022-01-01_037
     datetime_begin: !butler_time/tai/iso '1994-08-17 00:00:00.000000000'
     datetime_end: !butler_time/tai/iso '2049-05-19 00:00:00.000000000'
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     name: gen2/flat_2022-08-06_037_i
     datetime_begin: !butler_time/tai/iso '1995-03-22 00:00:00.000000000'
     datetime_end: !butler_time/tai/iso '2049-12-22 00:00:00.000000000'
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     name: unbounded
     datetime_begin: null
     datetime_end: null
 - type: dimension
   element: physical_filter
   records:
-  - instrument: LSST-ImSim
+  - instrument: LSSTCam-imSim
     name: i
     abstract_filter: i
 - type: dataset_type
@@ -1174,17 +1174,17 @@ data:
   - calibration_label
   storage_class: Camera
 - type: run
-  name: LSST-ImSim/calib
+  name: LSSTCam-imSim/calib
 - type: dataset
   dataset_type: camera
-  run: LSST-ImSim/calib
+  run: LSSTCam-imSim/calib
   records:
   - dataset_id:
     - 1
     data_id:
-    - instrument: LSST-ImSim
+    - instrument: LSSTCam-imSim
       calibration_label: unbounded
-    path: LSST-ImSim/calib/camera/camera_unbounded_LSST-ImSim_LSST-ImSim_calib.fits
+    path: LSSTCam-imSim/calib/camera/camera_unbounded_LSSTCam-imSim_LSSTCam-imSim_calib.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: dataset_type
   name: bias
@@ -1194,18 +1194,18 @@ data:
   - detector
   storage_class: ExposureF
 - type: run
-  name: LSST-ImSim/calib
+  name: LSSTCam-imSim/calib
 - type: dataset
   dataset_type: bias
-  run: LSST-ImSim/calib
+  run: LSSTCam-imSim/calib
   records:
   - dataset_id:
     - 2
     data_id:
-    - instrument: LSST-ImSim
+    - instrument: LSSTCam-imSim
       calibration_label: gen2/bias_2022-01-01_037
       detector: 37
-    path: LSST-ImSim/calib/bias/bias_gen2_bias_2022-01-01_037_37_LSST-ImSim_LSST-ImSim_calib.fits
+    path: LSSTCam-imSim/calib/bias/bias_gen2_bias_2022-01-01_037_37_LSSTCam-imSim_LSSTCam-imSim_calib.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: flat
@@ -1217,19 +1217,19 @@ data:
   - physical_filter
   storage_class: ExposureF
 - type: run
-  name: LSST-ImSim/calib
+  name: LSSTCam-imSim/calib
 - type: dataset
   dataset_type: flat
-  run: LSST-ImSim/calib
+  run: LSSTCam-imSim/calib
   records:
   - dataset_id:
     - 3
     data_id:
-    - instrument: LSST-ImSim
+    - instrument: LSSTCam-imSim
       calibration_label: gen2/flat_2022-08-06_037_i
       detector: 37
       physical_filter: i
-    path: LSST-ImSim/calib/flat/i/i/flat_i_i_gen2_flat_2022-08-06_037_i_37_LSST-ImSim_LSST-ImSim_calib.fits
+    path: LSSTCam-imSim/calib/flat/i/i/flat_i_i_gen2_flat_2022-08-06_037_i_37_LSSTCam-imSim_LSSTCam-imSim_calib.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: gaia

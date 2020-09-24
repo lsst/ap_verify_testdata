@@ -10,6 +10,21 @@ data:
     detector_max: 999
     class_name: lsst.obs.lsst.LsstImSim
 - type: dimension
+  element: calibration_label
+  records:
+  - instrument: LSSTCam-imSim
+    name: unbounded
+    datetime_begin: null
+    datetime_end: null
+  - instrument: LSSTCam-imSim
+    name: gen2/bias_2022-01-01_037
+    datetime_begin: !butler_time/tai/iso '1994-08-17 00:00:00.000000000'
+    datetime_end: !butler_time/tai/iso '2049-05-19 00:00:00.000000000'
+  - instrument: LSSTCam-imSim
+    name: gen2/flat_2022-08-06_037_i_sim_1.4
+    datetime_begin: !butler_time/tai/iso '1995-03-22 00:00:00.000000000'
+    datetime_end: !butler_time/tai/iso '2049-12-22 00:00:00.000000000'
+- type: dimension
   element: detector
   records:
   - instrument: LSSTCam-imSim
@@ -1147,26 +1162,11 @@ data:
     raft: R43
     purpose: SCIENCE
 - type: dimension
-  element: calibration_label
-  records:
-  - instrument: LSSTCam-imSim
-    name: gen2/bias_2022-01-01_037
-    datetime_begin: !butler_time/tai/iso '1994-08-17 00:00:00.000000000'
-    datetime_end: !butler_time/tai/iso '2049-05-19 00:00:00.000000000'
-  - instrument: LSSTCam-imSim
-    name: gen2/flat_2022-08-06_037_i
-    datetime_begin: !butler_time/tai/iso '1995-03-22 00:00:00.000000000'
-    datetime_end: !butler_time/tai/iso '2049-12-22 00:00:00.000000000'
-  - instrument: LSSTCam-imSim
-    name: unbounded
-    datetime_begin: null
-    datetime_end: null
-- type: dimension
   element: physical_filter
   records:
   - instrument: LSSTCam-imSim
-    name: i
-    abstract_filter: i
+    name: i_sim_1.4
+    band: i
 - type: dataset_type
   name: camera
   dimensions:
@@ -1210,7 +1210,7 @@ data:
 - type: dataset_type
   name: flat
   dimensions:
-  - abstract_filter
+  - band
   - instrument
   - calibration_label
   - detector
@@ -1226,10 +1226,10 @@ data:
     - 3
     data_id:
     - instrument: LSSTCam-imSim
-      calibration_label: gen2/flat_2022-08-06_037_i
+      calibration_label: gen2/flat_2022-08-06_037_i_sim_1.4
       detector: 37
-      physical_filter: i
-    path: LSSTCam-imSim/calib/flat/i/i/flat_i_i_gen2_flat_2022-08-06_037_i_37_LSSTCam-imSim_LSSTCam-imSim_calib.fits
+      physical_filter: i_sim_1.4
+    path: LSSTCam-imSim/calib/flat/i/i_sim_1.4/flat_i_i_sim_1_4_gen2_flat_2022-08-06_037_i_sim_1_4_37_LSSTCam-imSim_LSSTCam-imSim_calib.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: gaia

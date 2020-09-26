@@ -3,8 +3,12 @@
 
 Data from `testdata_lsst` for small-scale tests of [`ap_verify`](https://github.com/lsst-dm/ap_verify/) functionality.
 
-The data are identical to the files provided by [`testdata_lsst`](https://github.com/lsst/testdata_lsst/).
+The data were originally identical to the files provided by [`testdata_lsst`](https://github.com/lsst/testdata_lsst/).
 See that package for documentation of the file contents.
+
+However, [DM-26138](https://jira.lsstcorp.org/browse/DM-26138) updated the filter names used for LSST imSim data to include the throughputs version (e.g. "i" -> "i_sim_1.4").
+This affects the headers of both raw and master calibration files, as well as their usual filenames.
+These updates have been applied to the files in `ap_verify_testdata`, but not (yet) to the files in `testdata_lsst`.
 
 Relevant Files and Directories
 ------------------------------

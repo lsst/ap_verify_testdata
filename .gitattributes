@@ -4,5 +4,4 @@
 *.sqlite3 filter=lfs diff=lfs merge=lfs -text
 
 # These look like fits files, but are really symbolic links
-preloaded/calib/LSST-ImSim/bias !filter !diff !merge
-preloaded/calib/LSST-ImSim/flat !filter !diff !merge
+preloaded/calib/LSST-ImSim/gen2 !filter !diff !merge

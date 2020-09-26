@@ -10,21 +10,6 @@ data:
     detector_max: 999
     class_name: lsst.obs.lsst.LsstImSim
 - type: dimension
-  element: calibration_label
-  records:
-  - instrument: LSSTCam-imSim
-    name: unbounded
-    datetime_begin: null
-    datetime_end: null
-  - instrument: LSSTCam-imSim
-    name: gen2/bias_2022-01-01_037
-    datetime_begin: !butler_time/tai/iso '1994-08-17 00:00:00.000000000'
-    datetime_end: !butler_time/tai/iso '2049-05-19 00:00:00.000000000'
-  - instrument: LSSTCam-imSim
-    name: gen2/flat_2022-08-06_037_i_sim_1.4
-    datetime_begin: !butler_time/tai/iso '1995-03-22 00:00:00.000000000'
-    datetime_end: !butler_time/tai/iso '2049-12-22 00:00:00.000000000'
-- type: dimension
   element: detector
   records:
   - instrument: LSSTCam-imSim
@@ -1167,77 +1152,94 @@ data:
   - instrument: LSSTCam-imSim
     name: i_sim_1.4
     band: i
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTCam-imSim/calib
+- type: collection
+  collection_type: RUN
+  name: LSSTCam-imSim/calib/gen2/2022-01-01
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: LSSTCam-imSim/calib/gen2/2022-08-06
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: LSSTCam-imSim/calib/unbounded
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: refcats
+  host: null
+  timespan_begin: null
+  timespan_end: null
 - type: dataset_type
   name: camera
   dimensions:
   - instrument
-  - calibration_label
   storage_class: Camera
-- type: run
-  name: LSSTCam-imSim/calib
+  is_calibration: true
 - type: dataset
   dataset_type: camera
-  run: LSSTCam-imSim/calib
+  run: LSSTCam-imSim/calib/unbounded
   records:
   - dataset_id:
     - 1
     data_id:
     - instrument: LSSTCam-imSim
-      calibration_label: unbounded
-    path: LSSTCam-imSim/calib/camera/camera_unbounded_LSSTCam-imSim_LSSTCam-imSim_calib.fits
+    path: LSSTCam-imSim/calib/unbounded/camera/camera_LSSTCam-imSim_LSSTCam-imSim_calib_unbounded.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: dataset_type
   name: bias
   dimensions:
   - instrument
-  - calibration_label
   - detector
   storage_class: ExposureF
-- type: run
-  name: LSSTCam-imSim/calib
+  is_calibration: true
 - type: dataset
   dataset_type: bias
-  run: LSSTCam-imSim/calib
+  run: LSSTCam-imSim/calib/gen2/2022-01-01
   records:
   - dataset_id:
     - 2
     data_id:
     - instrument: LSSTCam-imSim
-      calibration_label: gen2/bias_2022-01-01_037
       detector: 37
-    path: LSSTCam-imSim/calib/bias/bias_gen2_bias_2022-01-01_037_37_LSSTCam-imSim_LSSTCam-imSim_calib.fits
+    path: LSSTCam-imSim/calib/gen2/2022-01-01/bias/bias_37_LSSTCam-imSim_LSSTCam-imSim_calib_gen2_2022-01-01.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: flat
   dimensions:
   - band
   - instrument
-  - calibration_label
   - detector
   - physical_filter
   storage_class: ExposureF
-- type: run
-  name: LSSTCam-imSim/calib
+  is_calibration: true
 - type: dataset
   dataset_type: flat
-  run: LSSTCam-imSim/calib
+  run: LSSTCam-imSim/calib/gen2/2022-08-06
   records:
   - dataset_id:
     - 3
     data_id:
     - instrument: LSSTCam-imSim
-      calibration_label: gen2/flat_2022-08-06_037_i_sim_1.4
       detector: 37
       physical_filter: i_sim_1.4
-    path: LSSTCam-imSim/calib/flat/i/i_sim_1.4/flat_i_i_sim_1_4_gen2_flat_2022-08-06_037_i_sim_1_4_37_LSSTCam-imSim_LSSTCam-imSim_calib.fits
+    path: LSSTCam-imSim/calib/gen2/2022-08-06/flat/i/i_sim_1.4/flat_i_i_sim_1_4_37_LSSTCam-imSim_LSSTCam-imSim_calib_gen2_2022-08-06.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: gaia
   dimensions:
   - htm7
   storage_class: SimpleCatalog
-- type: run
-  name: refcats
+  is_calibration: false
 - type: dataset
   dataset_type: gaia
   run: refcats
@@ -1284,3 +1286,19 @@ data:
     - htm7: 232344
     path: refcats/gaia/gaia_232344_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: associations
+  collection: LSSTCam-imSim/calib
+  collection_type: CALIBRATION
+  validity_ranges:
+  - begin: null
+    end: null
+    dataset_ids:
+    - 1
+  - begin: !butler_time/tai/iso '1994-08-17 00:00:00.000000000'
+    end: !butler_time/tai/iso '2049-05-19 00:00:00.000000000'
+    dataset_ids:
+    - 2
+  - begin: !butler_time/tai/iso '1995-03-22 00:00:00.000000000'
+    end: !butler_time/tai/iso '2049-12-22 00:00:00.000000000'
+    dataset_ids:
+    - 3

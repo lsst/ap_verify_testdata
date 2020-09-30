@@ -8,7 +8,7 @@ data:
     visit_max: 9999999999
     exposure_max: 9999999999
     detector_max: 999
-    class_name: lsst.obs.lsst.LsstImSim
+    class_name: lsst.obs.lsst.LsstCamImSim
 - type: dimension
   element: detector
   records:

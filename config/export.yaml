@@ -1179,6 +1179,18 @@ data:
   host: null
   timespan_begin: null
   timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: skymaps
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: templates/deep
+  host: null
+  timespan_begin: null
+  timespan_end: null
 - type: dataset_type
   name: camera
   dimensions:

@@ -67,6 +67,12 @@ def main():
         _migrate_gen2_to_gen3(dataset, gen2_repo, gen2_calibs, gen3_repo, mode="copy",
                               config_file="convertRepo_copied.py")
 
+    # ap_verify assumes specific collections are present
+    log.info("Adding unpopulated collections...")
+    butler = daf_butler.Butler(gen3_repo, writeable=True)
+    butler.registry.registerCollection("skymaps", daf_butler.CollectionType.RUN)
+    butler.registry.registerCollection("templates/deep", daf_butler.CollectionType.RUN)
+
     log.info("Exporting Gen 3 registry to configure new repos...")
     _export_for_copy(dataset, gen3_repo)
 
@@ -123,6 +129,9 @@ def _export_for_copy(dataset, repo):
         # before ingest.
         for collection in butler.registry.queryCollections(..., collectionTypes={daf_butler.CollectionType.CALIBRATION}):
             contents.saveCollection(collection)
+        # Export empty template collections
+        contents.saveCollection("skymaps")
+        contents.saveCollection("templates/deep")
 
 
 if __name__ == "__main__":

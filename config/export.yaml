@@ -1208,24 +1208,6 @@ data:
     path: LSSTCam-imSim/calib/unbounded/camera/camera_LSSTCam-imSim_LSSTCam-imSim_calib_unbounded.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: dataset_type
-  name: bias
-  dimensions:
-  - instrument
-  - detector
-  storage_class: ExposureF
-  is_calibration: true
-- type: dataset
-  dataset_type: bias
-  run: LSSTCam-imSim/calib/gen2/2022-01-01
-  records:
-  - dataset_id:
-    - 2
-    data_id:
-    - instrument: LSSTCam-imSim
-      detector: 37
-    path: LSSTCam-imSim/calib/gen2/2022-01-01/bias/bias_37_LSSTCam-imSim_LSSTCam-imSim_calib_gen2_2022-01-01.fits
-    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
-- type: dataset_type
   name: flat
   dimensions:
   - band
@@ -1239,12 +1221,30 @@ data:
   run: LSSTCam-imSim/calib/gen2/2022-08-06
   records:
   - dataset_id:
-    - 3
+    - 2
     data_id:
     - instrument: LSSTCam-imSim
       detector: 37
       physical_filter: i_sim_1.4
     path: LSSTCam-imSim/calib/gen2/2022-08-06/flat/i/i_sim_1.4/flat_i_i_sim_1_4_37_LSSTCam-imSim_LSSTCam-imSim_calib_gen2_2022-08-06.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: bias
+  dimensions:
+  - instrument
+  - detector
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: bias
+  run: LSSTCam-imSim/calib/gen2/2022-01-01
+  records:
+  - dataset_id:
+    - 3
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 37
+    path: LSSTCam-imSim/calib/gen2/2022-01-01/bias/bias_37_LSSTCam-imSim_LSSTCam-imSim_calib_gen2_2022-01-01.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: gaia
@@ -1259,14 +1259,14 @@ data:
   - dataset_id:
     - 4
     data_id:
-    - htm7: 232324
-    path: refcats/gaia/gaia_232324_refcats.fits
+    - htm7: 232347
+    path: refcats/gaia/gaia_232347_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 5
     data_id:
-    - htm7: 232347
-    path: refcats/gaia/gaia_232347_refcats.fits
+    - htm7: 232324
+    path: refcats/gaia/gaia_232324_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 6
@@ -1289,14 +1289,14 @@ data:
   - dataset_id:
     - 9
     data_id:
-    - htm7: 232345
-    path: refcats/gaia/gaia_232345_refcats.fits
+    - htm7: 232344
+    path: refcats/gaia/gaia_232344_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - 10
     data_id:
-    - htm7: 232344
-    path: refcats/gaia/gaia_232344_refcats.fits
+    - htm7: 232345
+    path: refcats/gaia/gaia_232345_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: associations
   collection: LSSTCam-imSim/calib
@@ -1306,11 +1306,11 @@ data:
     end: null
     dataset_ids:
     - 1
-  - begin: !butler_time/tai/iso '1994-08-17 00:00:00.000000000'
-    end: !butler_time/tai/iso '2049-05-19 00:00:00.000000000'
+  - begin: !butler_time/tai/iso '1995-03-22 00:00:00.000000000'
+    end: !butler_time/tai/iso '2049-12-21 00:00:00.000000000'
     dataset_ids:
     - 2
-  - begin: !butler_time/tai/iso '1995-03-22 00:00:00.000000000'
-    end: !butler_time/tai/iso '2049-12-22 00:00:00.000000000'
+  - begin: !butler_time/tai/iso '1994-08-17 00:00:00.000000000'
+    end: !butler_time/tai/iso '2049-05-18 00:00:00.000000000'
     dataset_ids:
     - 3

@@ -1,5 +1,5 @@
 description: Butler Data Repository Export
-version: 0
+version: 1.0.0
 data:
 - type: dimension
   element: instrument
@@ -1192,22 +1192,6 @@ data:
   timespan_begin: null
   timespan_end: null
 - type: dataset_type
-  name: camera
-  dimensions:
-  - instrument
-  storage_class: Camera
-  is_calibration: true
-- type: dataset
-  dataset_type: camera
-  run: LSSTCam-imSim/calib/unbounded
-  records:
-  - dataset_id:
-    - 1
-    data_id:
-    - instrument: LSSTCam-imSim
-    path: LSSTCam-imSim/calib/unbounded/camera/camera_LSSTCam-imSim_LSSTCam-imSim_calib_unbounded.fits
-    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
-- type: dataset_type
   name: bias
   dimensions:
   - instrument
@@ -1225,6 +1209,22 @@ data:
       detector: 37
     path: LSSTCam-imSim/calib/gen2/2022-01-01/bias/bias_37_LSSTCam-imSim_LSSTCam-imSim_calib_gen2_2022-01-01.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: camera
+  dimensions:
+  - instrument
+  storage_class: Camera
+  is_calibration: true
+- type: dataset
+  dataset_type: camera
+  run: LSSTCam-imSim/calib/unbounded
+  records:
+  - dataset_id:
+    - 1
+    data_id:
+    - instrument: LSSTCam-imSim
+    path: LSSTCam-imSim/calib/unbounded/camera/camera_LSSTCam-imSim_LSSTCam-imSim_calib_unbounded.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: dataset_type
   name: flat
   dimensions:
@@ -1263,6 +1263,30 @@ data:
     path: refcats/gaia/gaia_232324_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
+    - 8
+    data_id:
+    - htm7: 232326
+    path: refcats/gaia/gaia_232326_refcats.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - 7
+    data_id:
+    - htm7: 232327
+    path: refcats/gaia/gaia_232327_refcats.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - 10
+    data_id:
+    - htm7: 232344
+    path: refcats/gaia/gaia_232344_refcats.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - 9
+    data_id:
+    - htm7: 232345
+    path: refcats/gaia/gaia_232345_refcats.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
     - 5
     data_id:
     - htm7: 232347
@@ -1274,43 +1298,19 @@ data:
     - htm7: 232376
     path: refcats/gaia/gaia_232376_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
-  - dataset_id:
-    - 7
-    data_id:
-    - htm7: 232327
-    path: refcats/gaia/gaia_232327_refcats.fits
-    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
-  - dataset_id:
-    - 8
-    data_id:
-    - htm7: 232326
-    path: refcats/gaia/gaia_232326_refcats.fits
-    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
-  - dataset_id:
-    - 9
-    data_id:
-    - htm7: 232345
-    path: refcats/gaia/gaia_232345_refcats.fits
-    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
-  - dataset_id:
-    - 10
-    data_id:
-    - htm7: 232344
-    path: refcats/gaia/gaia_232344_refcats.fits
-    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: associations
   collection: LSSTCam-imSim/calib
   collection_type: CALIBRATION
   validity_ranges:
+  - begin: !butler_time/tai/iso '1994-08-17 00:00:00.000000000'
+    end: !butler_time/tai/iso '2049-05-18 00:00:00.000000000'
+    dataset_ids:
+    - 2
+  - begin: !butler_time/tai/iso '1995-03-22 00:00:00.000000000'
+    end: !butler_time/tai/iso '2049-12-21 00:00:00.000000000'
+    dataset_ids:
+    - 3
   - begin: null
     end: null
     dataset_ids:
     - 1
-  - begin: !butler_time/tai/iso '1994-08-17 00:00:00.000000000'
-    end: !butler_time/tai/iso '2049-05-19 00:00:00.000000000'
-    dataset_ids:
-    - 2
-  - begin: !butler_time/tai/iso '1995-03-22 00:00:00.000000000'
-    end: !butler_time/tai/iso '2049-12-22 00:00:00.000000000'
-    dataset_ids:
-    - 3

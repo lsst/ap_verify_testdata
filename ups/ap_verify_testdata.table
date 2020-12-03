@@ -1,1 +1,2 @@
-setupRequired(obs_lsst)
+# Data cannot be used without obs_lsst, but this dependency is omitted to
+# avoid forcing a new download any time obs_lsst is rebuilt.

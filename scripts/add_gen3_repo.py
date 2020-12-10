@@ -63,9 +63,11 @@ def main():
         gen2_calibs = workspace.calibRepo
         # Files stored in the Gen 2 part of the dataset, can be safely linked
         _migrate_gen2_to_gen3(dataset, gen2_repo, gen2_calibs, gen3_repo, mode,
+                              curated=False,
                               config_file="convertRepo_calibs.py")
         # Our refcats and defects are temporary files, and must not be linked
         _migrate_gen2_to_gen3(dataset, gen2_repo, gen2_calibs, gen3_repo, mode="copy",
+                              curated=False,
                               config_file="convertRepo_copied.py")
 
     # ap_verify assumes specific collections are present
@@ -78,7 +80,7 @@ def main():
     _export_for_copy(dataset, gen3_repo)
 
 
-def _migrate_gen2_to_gen3(dataset, gen2_repo, gen2_calib_repo, gen3_repo, mode, config_file):
+def _migrate_gen2_to_gen3(dataset, gen2_repo, gen2_calib_repo, gen3_repo, mode, curated, config_file):
     """Convert a Gen 2 repository into a Gen 3 repository.
 
     Parameters
@@ -93,6 +95,10 @@ def _migrate_gen2_to_gen3(dataset, gen2_repo, gen2_calib_repo, gen3_repo, mode, 
     mode : {'relsymlink', 'copy'}
        Whether the Gen 3 repo should contain symbolic links to the Gen 2
        datasets, or an independent copy.
+    curated : `bool`
+       If true, curated calibrations will be written to ``gen3_repo``. If
+       ``gen2_calib_repo`` is `None`, this flag is ignored and curated
+       calibrations are always written.
     config_file : `str`
        The config file (in the dataset config directory) with a configuration
        for `~lsst.obs.base.gen2to3.ConvertRepoTask`
@@ -124,7 +130,7 @@ def _migrate_gen2_to_gen3(dataset, gen2_repo, gen2_calib_repo, gen3_repo, mode, 
     convertRepoTask.run(
         root=gen2_repo,
         reruns=rerunsArg,
-        calibs=None if gen2_calib_repo is None else [CalibRepo(path=gen2_calib_repo)],
+        calibs=None if gen2_calib_repo is None else [CalibRepo(path=gen2_calib_repo, curated=curated)],
     )
 
 

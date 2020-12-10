@@ -63,7 +63,7 @@ def main():
         gen2_calibs = workspace.calibRepo
         # Files stored in the Gen 2 part of the dataset, can be safely linked
         _migrate_gen2_to_gen3(dataset, gen2_repo, gen2_calibs, gen3_repo, mode,
-                              curated=False,
+                              curated=True,
                               config_file="convertRepo_calibs.py")
         # Our refcats and defects are temporary files, and must not be linked
         _migrate_gen2_to_gen3(dataset, gen2_repo, gen2_calibs, gen3_repo, mode="copy",

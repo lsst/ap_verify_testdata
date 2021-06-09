@@ -5,3 +5,7 @@
 
 # These look like fits files, but are really symbolic links
 preloaded/calib/LSST-ImSim/gen2 !filter !diff !merge
+
+# Must be updated any time Gen 3 repository is updated, but most changes
+# are not human-meaningful.
+config/export.yaml linguist-generated=true

@@ -1,0 +1,7 @@
+description: End to end Alert Production pipeline for test dataset
+#
+# This pipeline delegates to per-task config files to ensure consistency with Gen 2.
+# The config files can be merged into this once ap_verify no longer supports Gen 2.
+
+imports:
+  - location: $AP_PIPE_DIR/pipelines/LsstCamImSim/ApPipe.yaml

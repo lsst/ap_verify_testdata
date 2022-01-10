@@ -15,12 +15,8 @@ Relevant Files and Directories
 path                  | description
 :---------------------|:-----------------------------
 `raw`                 | Raw fits files from [`testdata_lsst`](https://github.com/lsst/testdata_lsst/tree/master/data) in `i` band.
-`calib`               | Master calibration files from `lsst-dev:/datasets/DC2/repoRun2.2i` for `i` band.
 `config`              | Dataset-specific configs to help Stack code work with this dataset.
-`templates`           | To be populated with `TemplateCoadd` images produced by a compatible version of the LSST pipelines. Must be organized as a filesystem-based Butler repo. Currently empty.
-`repo`                | A template for a Butler raw data repository. This directory must never be written to; instead, it should be copied to a separate location, and data ingested into the copy (this is handled automatically by `ap_verify`, see below). Currently contains the appropriate `obs_lsst` `_mapper` file.
-`preloaded`           | A Gen 3 Butler repository containing the data in `calib` and `refcats`.
-`refcats`             | A small Gaia reference catalog.
+`preloaded`           | A Gen 3 Butler repository containing master calibration files from `lsst-dev:/datasets/DC2/repoRun2.2i` for `i` band and a small Gaia reference catalog.
 `scripts`             | A custom script for generating the `preloaded` directory.
 `dataIds.list`        | List of dataIds in this repo. For use in running Tasks. Currently set to run all Ids.
 

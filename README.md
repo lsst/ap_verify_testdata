@@ -17,7 +17,6 @@ path                  | description
 `raw`                 | Raw fits files from [`testdata_lsst`](https://github.com/lsst/testdata_lsst/tree/master/data) in `i` band.
 `config`              | Dataset-specific configs to help Stack code work with this dataset.
 `preloaded`           | A Gen 3 Butler repository containing master calibration files from `lsst-dev:/datasets/DC2/repoRun2.2i` for `i` band and a small Gaia reference catalog.
-`scripts`             | A custom script for generating the `preloaded` directory.
 `dataIds.list`        | List of dataIds in this repo. For use in running Tasks. Currently set to run all Ids.
 
 
@@ -36,6 +35,3 @@ However, it can be installed explicitly with the [LSST Software Build Tool](http
 
     git clone https://github.com/lsst/ap_verify_testdata/
     setup -r ap_verify_testdata
-
-Unlike other datasets, `ap_verify_testdata` is not recognized by `ap_verify`'s normal command-line scripts.
-It can be run through testing by calling `pytest` from the `ap_verify` installation directory, after `ap_verify` has been set up as normal.

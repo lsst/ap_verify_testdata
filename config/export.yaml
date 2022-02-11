@@ -18,6 +18,12 @@ data:
     tract_max: 18938
     patch_nx_max: 7
     patch_ny_max: 7
+  - name: test-skymap
+    hash: !!binary |
+      tp8p2WSmLFMGxe5tAlNRwck9kTE=
+    tract_max: 1
+    patch_nx_max: 1
+    patch_ny_max: 1
 - type: dimension
   element: detector
   records:
@@ -1161,6 +1167,23 @@ data:
   - instrument: LSSTCam-imSim
     name: i_sim_1.4
     band: i
+- type: dimension
+  element: tract
+  records:
+  - skymap: test-skymap
+    id: 0
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70eeda5f48b471df3fc3c9aca09ea6e63fc4b9dd80933de0bf99b13c64c15fdd3fe0118b76d655e73f9d683fb3933de0bf4457b459c00bde3f2c0f6ac5e3d7e73f60a4214c9b51debf413fc29cd90ee03fd901d3efab28e73f5341c7ea9a51debf
+- type: dimension
+  element: patch
+  records:
+  - skymap: test-skymap
+    tract: 0
+    id: 0
+    cell_x: 0
+    cell_y: 0
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70eeda5f48b471df3fc3c9aca09ea6e63fc4b9dd80933de0bf99b13c64c15fdd3fe0118b76d655e73f9d683fb3933de0bf4457b459c00bde3f2c0f6ac5e3d7e73f60a4214c9b51debf413fc29cd90ee03fd901d3efab28e73f5341c7ea9a51debf
 - type: collection
   collection_type: CALIBRATION
   name: LSSTCam-imSim/calib
@@ -2668,6 +2691,12 @@ data:
     data_id:
     - skymap: DC2
     path: skymaps/skyMap/skyMap_DC2_skymaps.pickle
+    formatter: lsst.daf.butler.formatters.pickle.PickleFormatter
+  - dataset_id:
+    - !uuid '6b224f90-ab5d-48a3-8e2f-572cdd30c146'
+    data_id:
+    - skymap: test-skymap
+    path: skymaps/skyMap/skyMap_test-skymap_skymaps.pickle
     formatter: lsst.daf.butler.formatters.pickle.PickleFormatter
 - type: associations
   collection: LSSTCam-imSim/calib

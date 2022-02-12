@@ -12,12 +12,6 @@ data:
 - type: dimension
   element: skymap
   records:
-  - name: DC2
-    hash: !!binary |
-      Hl+oX+JCYGQmUo9fe42/Acuq/54=
-    tract_max: 18938
-    patch_nx_max: 7
-    patch_ny_max: 7
   - name: test-skymap
     hash: !!binary |
       tp8p2WSmLFMGxe5tAlNRwck9kTE=
@@ -2686,12 +2680,6 @@ data:
   dataset_type: skyMap
   run: skymaps
   records:
-  - dataset_id:
-    - !uuid 'ad2dc53f-ba44-4695-b7d5-25b6a463dbde'
-    data_id:
-    - skymap: DC2
-    path: skymaps/skyMap/skyMap_DC2_skymaps.pickle
-    formatter: lsst.daf.butler.formatters.pickle.PickleFormatter
   - dataset_id:
     - !uuid '6b224f90-ab5d-48a3-8e2f-572cdd30c146'
     data_id:

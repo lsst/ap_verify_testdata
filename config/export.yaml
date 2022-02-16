@@ -1218,6 +1218,12 @@ data:
   timespan_begin: null
   timespan_end: null
 - type: collection
+  collection_type: RUN
+  name: templates/goodSeeing
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
   collection_type: CHAINED
   name: refcats
   children:
@@ -2670,6 +2676,28 @@ data:
     - htm7: 232376
     path: refcats/gen2/gaia/gaia_232376_refcats_gen2.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: goodSeeingCoadd
+  dimensions:
+  - band
+  - skymap
+  - tract
+  - patch
+  storage_class: ExposureF
+  is_calibration: false
+- type: dataset
+  dataset_type: goodSeeingCoadd
+  run: templates/goodSeeing
+  records:
+  - dataset_id:
+    - !uuid '759f0d4d-330d-4848-b597-4bf131f1faad'
+    data_id:
+    - band: i
+      skymap: test-skymap
+      tract: 0
+      patch: 0
+    path: templates/goodSeeing/goodSeeingCoadd/0/0/i/goodSeeingCoadd_0_0_i_test-skymap_templates_goodSeeing.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: skyMap
   dimensions:

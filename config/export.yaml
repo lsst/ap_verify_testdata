@@ -12,12 +12,12 @@ data:
 - type: dimension
   element: skymap
   records:
-  - name: DC2
+  - name: test-skymap
     hash: !!binary |
-      Hl+oX+JCYGQmUo9fe42/Acuq/54=
-    tract_max: 18938
-    patch_nx_max: 7
-    patch_ny_max: 7
+      tp8p2WSmLFMGxe5tAlNRwck9kTE=
+    tract_max: 1
+    patch_nx_max: 1
+    patch_ny_max: 1
 - type: dimension
   element: detector
   records:
@@ -1161,6 +1161,23 @@ data:
   - instrument: LSSTCam-imSim
     name: i_sim_1.4
     band: i
+- type: dimension
+  element: tract
+  records:
+  - skymap: test-skymap
+    id: 0
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70eeda5f48b471df3fc3c9aca09ea6e63fc4b9dd80933de0bf99b13c64c15fdd3fe0118b76d655e73f9d683fb3933de0bf4457b459c00bde3f2c0f6ac5e3d7e73f60a4214c9b51debf413fc29cd90ee03fd901d3efab28e73f5341c7ea9a51debf
+- type: dimension
+  element: patch
+  records:
+  - skymap: test-skymap
+    tract: 0
+    id: 0
+    cell_x: 0
+    cell_y: 0
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70eeda5f48b471df3fc3c9aca09ea6e63fc4b9dd80933de0bf99b13c64c15fdd3fe0118b76d655e73f9d683fb3933de0bf4457b459c00bde3f2c0f6ac5e3d7e73f60a4214c9b51debf413fc29cd90ee03fd901d3efab28e73f5341c7ea9a51debf
 - type: collection
   collection_type: CALIBRATION
   name: LSSTCam-imSim/calib
@@ -1197,6 +1214,12 @@ data:
 - type: collection
   collection_type: RUN
   name: skymaps
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: templates/goodSeeing
   host: null
   timespan_begin: null
   timespan_end: null
@@ -2654,6 +2677,28 @@ data:
     path: refcats/gen2/gaia/gaia_232376_refcats_gen2.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: dataset_type
+  name: goodSeeingCoadd
+  dimensions:
+  - band
+  - skymap
+  - tract
+  - patch
+  storage_class: ExposureF
+  is_calibration: false
+- type: dataset
+  dataset_type: goodSeeingCoadd
+  run: templates/goodSeeing
+  records:
+  - dataset_id:
+    - !uuid '759f0d4d-330d-4848-b597-4bf131f1faad'
+    data_id:
+    - band: i
+      skymap: test-skymap
+      tract: 0
+      patch: 0
+    path: templates/goodSeeing/goodSeeingCoadd/0/0/i/goodSeeingCoadd_0_0_i_test-skymap_templates_goodSeeing.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
   name: skyMap
   dimensions:
   - skymap
@@ -2664,10 +2709,10 @@ data:
   run: skymaps
   records:
   - dataset_id:
-    - !uuid 'ad2dc53f-ba44-4695-b7d5-25b6a463dbde'
+    - !uuid '6b224f90-ab5d-48a3-8e2f-572cdd30c146'
     data_id:
-    - skymap: DC2
-    path: skymaps/skyMap/skyMap_DC2_skymaps.pickle
+    - skymap: test-skymap
+    path: skymaps/skyMap/skyMap_test-skymap_skymaps.pickle
     formatter: lsst.daf.butler.formatters.pickle.PickleFormatter
 - type: associations
   collection: LSSTCam-imSim/calib

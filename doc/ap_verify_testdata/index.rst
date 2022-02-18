@@ -13,7 +13,7 @@ Using ap_verify_testdata
 ========================
 
 This package provides a minimal valid dataset for testing dataset handling, particularly ingestion.
-Because there are no templates and the reference catalog is not guaranteed to match the data, this dataset is not suitable for full ``ap_verify`` runs.
+Because the template is a mock and the reference catalog is not guaranteed to match the data, this dataset is not suitable for full ``ap_verify`` runs.
 
 .. _ap_verify_testdata-contents:
 
@@ -23,9 +23,8 @@ Dataset contents
 This package provides a number of demonstration files copied from `testdata_lsst <https://github.com/lsst/testdata_lsst/>`_.
 See that package for detailed file and provenance information.
 
-The dataset contents include raw images and flats.
-The dataset does not provide any image differencing templates.
-It does have a small Gaia DR1 reference catalog, but it is not guaranteed to overlap with the footprint of the raw data.
+The dataset contents include raw ``i`` images and flats, as well as a mock ``goodSeeing`` template covering the raws.
+It also has a small Gaia DR1 reference catalog, but it is not guaranteed to overlap with the footprint of the raw data.
 
 .. _ap_verify_testdata-contributing:
 

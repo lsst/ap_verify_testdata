@@ -1232,6 +1232,7 @@ data:
   collection_type: CHAINED
   name: LSSTCam-imSim/defaults
   children:
+  - templates/goodSeeing
   - LSSTCam-imSim/calib
   - skymaps
   - refcats

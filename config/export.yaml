@@ -1,11 +1,14 @@
 description: Butler Data Repository Export
-version: 1.0.1
+version: 1.0.2
+universe_version: 3
+universe_namespace: daf_butler
 data:
 - type: dimension
   element: instrument
   records:
   - name: LSSTCam-imSim
     visit_max: 9999999
+    visit_system: 0
     exposure_max: 9999999
     detector_max: 1000
     class_name: lsst.obs.lsst.LsstCamImSim

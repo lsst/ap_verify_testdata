@@ -1210,6 +1210,12 @@ data:
   timespan_end: null
 - type: collection
   collection_type: RUN
+  name: pretrained_models/dummy
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
   name: refcats/gen2
   host: null
   timespan_begin: null
@@ -1228,6 +1234,11 @@ data:
   timespan_end: null
 - type: collection
   collection_type: CHAINED
+  name: models
+  children:
+  - pretrained_models/dummy
+- type: collection
+  collection_type: CHAINED
   name: refcats
   children:
   - refcats/gen2
@@ -1239,6 +1250,7 @@ data:
   - LSSTCam-imSim/calib
   - skymaps
   - refcats
+  - models
 - type: dataset_type
   name: bfk
   dimensions:
@@ -2702,6 +2714,21 @@ data:
       patch: 0
     path: templates/goodSeeing/goodSeeingCoadd/0/0/i/goodSeeingCoadd_0_0_i_test-skymap_templates_goodSeeing.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: pretrainedModelPackage
+  dimensions: []
+  storage_class: NNModelPackagePayload
+  is_calibration: false
+- type: dataset
+  dataset_type: pretrainedModelPackage
+  run: pretrained_models/dummy
+  records:
+  - dataset_id:
+    - !uuid '0f86424e-6b5a-4ab7-b632-ebd77c4eb4e0'
+    data_id:
+    - {}
+    path: pretrained_models/dummy/pretrainedModelPackage/pretrainedModelPackage_pretrained_models_dummy.zip
+    formatter: lsst.meas.transiNet.modelPackages.formatters.NNModelPackageFormatter
 - type: dataset_type
   name: skyMap
   dimensions:

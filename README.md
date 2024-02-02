@@ -16,7 +16,7 @@ path                  | description
 :---------------------|:-----------------------------
 `raw`                 | Raw fits files from [`testdata_lsst`](https://github.com/lsst/testdata_lsst/tree/master/data) in `i` band.
 `config`              | Dataset-specific configs to help Stack code work with this dataset.
-`preloaded`           | A Gen 3 Butler repository containing master calibration files from `lsst-dev:/datasets/DC2/repoRun2.2i` for `i` band, a token `goodSeeing` template, and a small Gaia reference catalog.
+`preloaded`           | A Gen 3 Butler repository containing master calibration files from `lsst-dev:/datasets/DC2/repoRun2.2i` for `i` band, a token `goodSeeing` template, a small Gaia reference catalog, and a dummy real/bogus classification model.
 `dataIds.list`        | List of dataIds in this repo. For use in running Tasks. Currently set to run all Ids.
 
 

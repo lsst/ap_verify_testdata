@@ -2,5 +2,5 @@
 
 ****
 
-- [ ] Did you run `ap_verify.py` on this dataset?
+- [ ] Did you run `ap_verify`'s unit tests with this dataset set up?
 - [ ] Are the Sphinx documentation and readme up-to-date?

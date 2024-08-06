@@ -2653,44 +2653,26 @@ data:
   - dataset_id:
     - !uuid '3781fd88-6773-4507-9505-08012b5cd5d6'
     data_id:
-    - htm7: 232324
-    path: refcats/gen2/gaia/gaia_232324_refcats_gen2.fits
+    - htm7: 147157
+    path: refcats/gaia/gaia_147157_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - !uuid 'd03a68ee-865e-40e6-b8ca-bae17abf7395'
     data_id:
-    - htm7: 232326
-    path: refcats/gen2/gaia/gaia_232326_refcats_gen2.fits
+    - htm7: 147184
+    path: refcats/gaia/gaia_147184_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - !uuid 'af7c5760-3237-4449-89b9-e4630c2f4311'
     data_id:
-    - htm7: 232327
-    path: refcats/gen2/gaia/gaia_232327_refcats_gen2.fits
+    - htm7: 147186
+    path: refcats/gaia/gaia_147186_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
   - dataset_id:
     - !uuid '12e4604d-53b2-4dfe-8188-979da30f3268'
     data_id:
-    - htm7: 232344
-    path: refcats/gen2/gaia/gaia_232344_refcats_gen2.fits
-    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
-  - dataset_id:
-    - !uuid '82f4c8d7-e221-433a-a4f6-535ce0aa8cea'
-    data_id:
-    - htm7: 232345
-    path: refcats/gen2/gaia/gaia_232345_refcats_gen2.fits
-    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
-  - dataset_id:
-    - !uuid '471fd474-b63b-479d-b271-5cc4238ff391'
-    data_id:
-    - htm7: 232347
-    path: refcats/gen2/gaia/gaia_232347_refcats_gen2.fits
-    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
-  - dataset_id:
-    - !uuid '0ef6ceef-f965-4dc8-899a-9e2aec9d4c5a'
-    data_id:
-    - htm7: 232376
-    path: refcats/gen2/gaia/gaia_232376_refcats_gen2.fits
+    - htm7: 147187
+    path: refcats/gaia/gaia_147187_refcats.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: dataset_type
   name: goodSeeingCoadd

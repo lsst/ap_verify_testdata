@@ -10,8 +10,11 @@
 config.name = "test-skymap"
 config.skyMap = "discrete"
 config.skyMap.active.pixelScale = 2.0 # arcsec/pixel
-config.skyMap.active.tractBuilder = "legacy"
-config.skyMap.active.tractBuilder["legacy"].patchInnerDimensions = (4000, 4000) # pixels
+config.skyMap.active.tractBuilder = "cells"
+config.skyMap.active.tractBuilder["cells"].cellBorder = 100
+config.skyMap.active.tractBuilder["cells"].cellInnerDimensions=[400, 400]
+config.skyMap.active.tractBuilder["cells"].numCellsInPatchBorder = 0
+config.skyMap.active.tractBuilder["cells"].numCellsPerPatchInner=10
 config.skyMap["discrete"].raList = [56.525] # degrees
 config.skyMap["discrete"].decList = [-29.394] # degrees
 config.skyMap["discrete"].radiusList = [0.1] # degrees

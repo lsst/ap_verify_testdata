@@ -4,4 +4,4 @@ description: End to end Alert Production pipeline for test dataset
 # The config files can be merged into this once ap_verify no longer supports Gen 2.
 
 imports:
-  - location: $AP_PIPE_DIR/pipelines/LSSTCam-imSim/ApPipe.yaml
+  - location: resource://lsst.ap.pipe/resources/pipelines/LSSTCam-imSim/ApPipe.yaml
